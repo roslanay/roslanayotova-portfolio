@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Roslana Yotova</title>
+		<meta name="description" content="A selection of works by Roslana Yotova" />
+		<meta name="keywords" content="portfolio, art & design, digital art, interactive media design, performance, installation" />
+		<meta name="author" content="Roslana Yotova"/>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+	</head>
+
+	<body class="demo-3 loading">
+		<main>
+			
+			<!-- Hero Section -->
+			<div class="slider">
+				<!-- Swiper -->
+				<div class="swiper mySwiper">
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide"><img src="hero/1.jpg" alt="Girl in a jacket"></div>
+						<div class="swiper-slide"><img src="hero/2.gif" alt="Girl in a jacket"></div>
+						<div class="swiper-slide"><img src="hero/3.jpg" alt="Girl in a jacket"></div>
+						<div class="swiper-slide"><img src="hero/7.gif" alt="Girl in a jacket"></div>
+						<div class="swiper-slide"><img src="hero/4.gif" alt="Girl in a jacket"></div>
+						<div class="swiper-slide"><img src="hero/8.png" alt="Girl in a jacket"></div>
+					</div>
+					<!-- Swiper Navigation -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
+				</div>			
+			</div>
+			
+			<!-- Links Section -->
+			<div class="text-holder">
+
+				<!-- Intro Section -->
+				<p class="block">
+					<span class="proj-title">roslana yotova<br> <span style="font-weight: 400;">interactive media art & graphic design</span></span> 
+					<span class="proj-type"><a target="_blank" href="mailto:roslanayotova@gmail.com">roslanayotova@gmail.com</a> <br> <a target="_blank" href="tel:+359885355794">+359 (0) 885 355 794</a> </span> 
+					<span class="proj-expo">Roslana is an interactive media artist with a bachelor in Graphic Design. She graduated from the Royal Academy of Art, The Hague, NL in 2019 and is currently based in Sofia, BG. </span>
+					<span class="proj-year">(◕‿◕)					</span>
+				</p>
+				
+				<!-- Project -->
+				<a href="#" class="block">
+					<span class="proj-title">Ground Truth</span> 
+					<span class="proj-type">interactive installation, performative camouflage</span> 
+					<span class="proj-expo">Graduation Show, Royal Academy of Art, The Hague</span>
+					<span class="proj-year">2019</span>
+				</a>
+				<!-- Project -->
+				<a href="#" class="block">
+					<span class="proj-title">Choreographies of relativity</span> 
+					<span class="proj-type">performance, public space</span> 
+					<span class="proj-expo">City Center, The Hague</span>
+					<span class="proj-year">2019</span>
+				</a>
+				<!-- Project -->
+				<a href="#" class="block">
+					<span class="proj-title">Use a catchy title</span> 
+					<span class="proj-type">BA thesis, editorial, web design</span> 
+					<span class="proj-expo">Open Day, Royal Academy of Art, The Hague</span>
+					<span class="proj-year">2018</span>
+				</a>
+				<!-- Project -->
+				<a href="#" class="block">
+					<span class="proj-title">Other Voices, Other views</span> 
+					<span class="proj-type">short documentary, alternative education</span> 
+					<span class="proj-expo">Graphic Design BA, Royal Academy of Art, The Hague</span>
+					<span class="proj-year">2018</span>
+				</a>
+				<!-- Project -->
+				<a href="#" class="block">
+					<span class="proj-title">Safe Net</span> 
+					<span class="proj-type">speculative design, VPN ban</span> 
+					<span class="proj-expo">50 years Amnesty International, Theater Amsterdam</span>
+					<span class="proj-year">2018</span>
+				</a>
+				<!-- Project -->
+				<a href="#" class="block">
+					<span class="proj-title">Give it a title</span> 
+					<span class="proj-type">video mapping,100 years DeStijl</span> 
+					<span class="proj-expo">Todays Art, Aan Het Spui, The Hague</span>
+					<span class="proj-year">2018</span>
+				</a>
+				<!-- Project -->
+				<a href="#" class="block">
+					<span class="proj-title">Space Junky</span> 
+					<span class="proj-type">video game</span> 
+					<span class="proj-expo">Stroom, The Hague</span>
+					<span class="proj-year">2017</span>
+				</a>
+				<!-- Project -->
+				<a href="#" class="block">
+					<span class="proj-title">Once upon a now</span> 
+					<span class="proj-type">video installation</span> 
+					<span class="proj-expo">Royal Academy of Art, The Hague</span>
+					<span class="proj-year">2017</span>
+				</a>
+				
+				
+			</div>
+		</main>
+	</body>
+
+	<!-- Load Scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script> 
+		// console.log("test");
+		var swiper = new Swiper(".mySwiper", {
+			slidesPerView: "auto",
+			spaceBetween: 40,
+			observer: true, 
+			observeParents: true,
+			parallax:true,
+			freeMode: true,
+			autoplay: {
+				delay: 2000,
+				pauseOnMouseEnter: true,
+			},
+			pagination: {
+				el: ".swiper-pagination",
+				type: "progressbar",
+				clickable: true,
+			},
+			navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
+
+</html>
