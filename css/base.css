@@ -36,9 +36,6 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	/* cursor: crosshair; */
 }
-main {
-	border-bottom: 4px solid blue;
-}
 
 /*.demo-2 {
 	--color-text: #ffffff;
@@ -269,29 +266,30 @@ a:focus {
 	width: 100%;
 }
 
-p.block {
+.block-para {
 	padding: 1vw;
 	margin: 0;
 }
-.block{
+.block-link{
 	display: flex;
 	font-size: 0.75em;
 	padding: 0.25vw 1vw;
 	border-bottom: 1px solid #000;
-	
 }
-.block:hover{
-	/* background-color: white; */
-	filter: blur(1px);
+.block-para{
+	display: flex;
+	font-size: 0.75em;
+	padding: 0.25vw 1vw;
+	border-bottom: 1px solid #000;
 }
-p.block:hover{
-	/* background-color: white; */
-	filter: blur(0);
+.block-link:hover{
+	background-color: lightgrey;
 }
-.block > span{
-	/* font-size: 0.5em; */
-	/* display: block; */
-	/* padding-left: 5vw; */
+
+.block-link > span{
+	font-weight: 500;
+}
+.block-para > span{
 	font-weight: 500;
 }
 
@@ -302,12 +300,9 @@ p.block:hover{
 	
 }
 
-.block > span:nth-of-type(even){
+.block-link > span:nth-of-type(even){
 	color: blue;
 }
-/* .block > span:first-of-type{
-	font-weight: 500;
-} */
 
 .intro{
 	font-size: 1.2em;
@@ -347,8 +342,8 @@ p.block:hover{
   .swiper-slide img {
 	display: block;
 	max-width: 100%;
-	/* height: 100%; */
-	height: auto;
+	height: 100%;
+	/* height: auto; */
 	max-height: 100%;
 	object-fit: cover;
   } 
@@ -358,7 +353,7 @@ p.block:hover{
 	height:90vh;
 	overflow: hidden;
 	display: flex;
-	margin-bottom: 2vw;
+	margin-bottom: 0.7vw;
 }
 
 img{
@@ -392,11 +387,42 @@ img{
   :root { --swiper-theme-color: blue; }
 
   .swiper-button-next, .swiper-button-prev{
-	  width: 20px;
-	  height: 20px;
+	  width: 25px;
+	  height: 25px;
 	  background-color: blue;
 	  /* border-radius: 100%; */
+	  border: 1px solid white;
   }
   .swiper-button-next:after, .swiper-button-prev:after{
 	  display: none;
   }
+  .back-btn{
+	  position: fixed;
+	  top: 1vw;
+	  left: var(--swiper-navigation-sides-offset,10px);
+	  z-index: 10;
+	  color: blue;
+	  font-size: 25px;
+	  font-weight: 600;
+  }
+
+  .footer{
+	  /* display: flex;
+	  align-items: center;
+	  justify-content: center; */
+  }
+
+
+  .swiper-slide {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+ /* (Optional) Apply a "closed-hand" cursor during drag operation. */
+ .swiper-slide:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
